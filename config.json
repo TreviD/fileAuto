@@ -1,0 +1,14 @@
+{
+  "type" :{
+    "types" : ["镜像","python","文本","jar", "video"],
+    "镜像" : ["dmg","iso"],
+    "python" : ["py"],
+    "文本" : ["txt"],
+    "jar" : ["jar"],
+    "video" : ["mkv", "rmvb", "mp4", ""]
+  },
+  "path" : ["/Volumes/data/下载"],
+  "delay" : 30,
+  "oldFileTime" : 100,
+  "delayDelDir" : []
+}
