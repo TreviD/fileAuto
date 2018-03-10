@@ -7,8 +7,9 @@
     "jar" : ["jar"],
     "video" : ["mkv", "rmvb", "mp4", ""]
   },
-  "path" : ["/Volumes/data/下载"],
-  "delay" : 30,
+  "exclude" : ["archive", "image", "old", "floder", "Other"],
+  "path" : ["/Volumes/data/文件/备份"],
+  "delay" : 0,
   "oldFileTime" : 100,
   "delayDelDir" : []
 }

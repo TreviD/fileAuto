@@ -41,23 +41,24 @@ def get_FileType(filePath):
         data = json.loads(configfile.read())
 
         tmp = str(os.path.basename(filePath)).split('.')
-        if (len(tmp) >= 1):
+        type = None
+        if (len(tmp) > 1):
                 type_str = tmp[len(tmp) - 1]
                 for i in data["type"]['types']:
                         if (type_str in data["type"][i]):
                                 return i
 
-        else:
-                type = filetype.guess(filePath)
-                if type is None:
-                        tmp = fileType.filetype(filePath)
-                        if (tmp != "unknown"):
-                                return tmp
-                        else:
-                                return None
 
+        type = filetype.guess(filePath)
+        if type is None:
+                tmp = fileType.filetype(filePath)
+                if (tmp != "unknown"):
+                        return tmp
                 else:
-                        return str(type).split('.')[2]
+                        return None
+
+        else:
+                return str(type).split('.')[2]
 
 def zip_dir(file_path, zfile_path):
         '''
