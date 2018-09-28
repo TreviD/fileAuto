@@ -1,14 +1,16 @@
 {
   "type" :{
-    "types" : ["镜像","python","文本","jar", "video"],
+    "types" : ["镜像","python","文本","jar", "video","安装包","压缩包"],
     "镜像" : ["dmg","iso"],
     "python" : ["py"],
     "文本" : ["txt"],
     "jar" : ["jar"],
-    "video" : ["mkv", "rmvb", "mp4", ""]
+    "video" : ["mkv", "rmvb", "mp4", ""],
+    "安装包" : ["exe"],
+    "压缩包" : ["7z"]
   },
   "exclude" : ["archive", "image", "old", "floder", "Other"],
-  "path" : ["/Volumes/data/文件/备份"],
+  "path" : ["C:\\Users\\somnus\\Downloads"],
   "delay" : 0,
   "oldFileTime" : 100,
   "delayDelDir" : []

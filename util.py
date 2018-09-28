@@ -49,16 +49,20 @@ def get_FileType(filePath):
                                 return i
 
 
-        type = filetype.guess(filePath)
-        if type is None:
+
+
                 tmp = fileType.filetype(filePath)
                 if (tmp != "unknown"):
                         return tmp
                 else:
-                        return None
+                        type = filetype.guess(filePath)
+                        if type is not None:
+                                return type
+                        else:
+                                return None
 
         else:
-                return str(type).split('.')[2]
+                return str(type).split('.')[2] if len(str(type).split('.'))>1 else None
 
 def zip_dir(file_path, zfile_path):
         '''
