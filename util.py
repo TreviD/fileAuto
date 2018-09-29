@@ -57,7 +57,7 @@ def get_FileType(filePath):
                 else:
                         type = filetype.guess(filePath)
                         if type is not None:
-                                return type
+                                return type.EXTENSION
                         else:
                                 return None
 
@@ -103,4 +103,4 @@ def unzip_file(zfile_path, unzip_dir):
                 print(zfile_path + " is a bad zip file ,please check!")
 
 
-# print(get_FileType('/Users/mac/Desktop/uzerme.dmg'))
+print(get_FileType("/Users/dmy/Desktop/Git-2.19.0-32-bit.exe"))
